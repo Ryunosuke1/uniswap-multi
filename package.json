@@ -1,0 +1,50 @@
+{
+  "name": "my-jsii-project",
+  "version": "0.1.0",
+  "description": "A jsii-compatible package for Uniswap V3 multi-hop swaps",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "jsii",
+    "package": "jsii-pacmak"
+  },
+  "keywords": [
+    "uniswap",
+    "v3",
+    "swap",
+    "jsii"
+  ],
+  "author": "Ryunosuke Sagara",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "jsii": "^5.0.0",
+    "jsii-pacmak": "^5.0.0",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@uniswap/sdk-core": "^3.1.0",
+    "@uniswap/v3-sdk": "^3.9.0",
+    "ethers": "^6.0.0",
+    "jsii": "^4.3.0"
+  },
+  "bundledDependencies": [
+    "@uniswap/sdk-core",
+     "@uniswap/v3-sdk",
+     "ethers",
+     "jsii"
+  ],
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "uniswap_v3_multi",
+        "module": "uniswap_v3_multi"
+      }
+    }
+  }
+}

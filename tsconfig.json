@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ESNext", // 出力するJavaScriptのバージョン
+      "module": "commonjs", // モジュール形式
+      "outDir": "./lib", // 出力先ディレクトリ
+      "rootDir": "./lib", // ソースファイルのルートディレクトリ
+      "strict": true, // 厳格な型チェックを有効にする
+      "esModuleInterop": true // ESモジュールとの互換性を持たせる
+    },
+    "include": ["lib/main.ts"], // コンパイル対象ファイルを指定
+  }
+  
